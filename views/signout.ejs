@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodingAngryheart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Lobster&family=Pacifico&family=Poppins:wght@500&family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
+
+    /* Navbar prepairation */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    *::selection {
+      color: white;
+      background-color: black;
+    }
+
+    html {
+      font-size: 10px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    :root {
+      --border: 1px solid rgb(255, 255, 255);
+      --transparent-color: rgb(202, 202, 202);
+      --primary-s-color: #dbdbdb26;
+      --primary-n-color: #e9e9e9;
+      --primary-h-color: #000000ba;
+      --filter: opacity(0.5);
+      --s-filter: invert(1);
+      --home-color: #5c5c5c;
+      --h-background-color: lightgray;
+      --h4-color: #4c4a4a;
+      --e-p-color: #727272;
+    }
+
+    .dark-theme {
+      --border: 1px solid rgb(53, 53, 53);
+      --transparent-color: rgba(54, 53, 53, 0.698);
+      --primary-s-color: #000000ba;
+      --primary-n-color: #000000ba;
+      --primary-h-color: #cdcdcd;
+      --filter: invert(1);
+      --s-filter: opacity(0.5);
+      --home-color: #b2b2b2;
+      --h-background-color: #525252;
+      --h4-color: #9e9e9e;
+      --e-p-color: #8a8a8a;
+    }
+
+    body {
+      background-color: var(--primary-n-color);
+      color: var(--primary-h-color);
+    }
+
+    #navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #dbdbdb26;
+      height: 7rem;
+      box-shadow: 0rem 0rem 0.7rem 0rem rgb(0, 0, 0);
+      background: var(--primary-s-color);
+    }
+
+    hr {
+      box-shadow: 0rem 0rem 1rem 0rem black;
+    }
+
+    .navbar-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .left-n-c h1 {
+      font-size: 2.2rem;
+      color: #8f8f8f;
+      cursor: pointer;
+    }
+
+    .left-n-c h1:hover {
+      font-size: 2.2rem;
+      color: #000000;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      font-size: 1.7rem;
+      gap: 4rem;
+    }
+
+    ul li a {
+      color: #8f8f8f;
+      font-style: none;
+      text-decoration: none;
+      transition: 0.5s;
+      color: var(--primary-h-color);
+    }
+
+    ul li select {
+      color: #8f8f8f;
+      font-style: none;
+      text-decoration: none;
+      transition: 0.5s;
+      color: var(--primary-h-color);
+      border: none;
+      font-size: 1.8rem;
+      font-weight: 600;
+      background: transparent;
+      width: 8rem;
+    }
+
+    ul li a:hover {
+      color: black;
+      border-bottom: 0.2rem solid black;
+      color: var(--primary-h-color);
+    }
+
+    ul li select:hover {
+      color: black;
+      border-bottom: 0.2rem solid black;
+      color: var(--primary-h-color);
+    }
+
+    ul li select option {
+      background: #a5a4a4;
+    }
+
+    ul li a img {
+      height: 2rem;
+      width: 2rem;
+      margin-top: 0.3rem;
+      filter: opacity(0.5);
+      transition: 0.3s;
+      filter: var(--filter);
+      cursor: pointer;
+    }
+
+    ul li a img:hover {
+      filter: opacity(1);
+      filter: var(--filter);
+    }
+
+    .right-n-c {
+      display: flex;
+      align-items: center;
+      gap: 6rem;
+    }
+
+    .right-n-c img {
+      width: 2.7rem;
+      height: 2.6rem;
+      filter: opacity(0.5);
+      transition: 0.3s;
+      filter: var(--filter);
+      cursor: pointer;
+    }
+
+    .right-n-c img:hover {
+      filter: opacity(1);
+      border-bottom: 0.2rem solid black;
+      filter: var(--filter);
+    }
+
+    #sn-btn {
+      width: 8rem;
+      height: 3.3rem;
+      background: transparent;
+      border: none;
+      box-shadow: 0rem 0rem 0.2rem 0rem gray;
+      border-radius: 1rem;
+      outline: none;
+      cursor: pointer;
+      font-weight: 600;
+      color: #706969;
+      color: var(--primary-h-color);
+    }
+
+    #sn-btn:hover {
+      width: 8rem;
+      height: 3.3rem;
+      background: transparent;
+      border: none;
+      box-shadow: inset 0rem 0rem 1rem 0rem #c9c9c9;
+      border-radius: 1rem;
+      outline: none;
+      cursor: pointer;
+      font-weight: 600;
+      color: #706969;
+    }
+
+    .right-n-c .scinput {
+      width: 0;
+      height: 0;
+      padding: 0rem 0rem;
+      outline: 0;
+      position: absolute;
+      transition: 1s;
+      border: var(--border);
+      margin-right: -35rem;
+      margin-top: 11rem;
+      color: var(--primary-h-color);
+    }
+
+    .right-n-c .sinput {
+      width: 24rem;
+      height: 3rem;
+      border: 0;
+      background: transparent;
+      box-shadow: 0rem 0rem 0.3rem 0rem gray;
+      border-radius: 1rem;
+      padding: 0rem 1rem;
+      outline: 0;
+      position: absolute;
+      transition: 1s;
+      background: var(--primary-n-color);
+      border: var(--border);
+      margin-right: -35rem;
+      margin-top: 11rem;
+    }
+
+    /* prosec.css */
+
+    .usheadap {
+      padding: 0rem 14rem;
+      margin: 3rem 0rem;
+    }
+
+    .usheadap p {
+      font-size: 2rem;
+    }
+
+    .usheadap h1 {
+      font-size: 3rem;
+      font-size: 4rem;
+      font-weight: 700;
+      text-shadow: 0rem 0rem 0.4rem;
+      border-bottom: 0.3rem solid;
+      width: 11rem;
+      text-align: center;
+      border-radius: 1rem;
+    }
+
+    .img img {
+      width: 22rem;
+      border-radius: 11rem
+    }
+
+    .usersi {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      color: black;
+    }
+
+    .usersi label {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--primary-h-color);
+    }
+
+    .usersi input {
+      border: 0;
+      font-size: 1.8rem;
+      outline: 0;
+    }
+
+    .usersi #status {
+      color: green
+    }
+
+    #ustatus {
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ustatuscon {
+      width: 51rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      box-shadow: inset 0rem 0rem 0.5rem 0rem gray;
+      padding: 4rem;
+      border-radius: 2rem;
+    }
+
+    .ustatuscon h1 {
+      font-size: 3rem;
+      text-shadow: 0rem 0.2rem 0.2rem;
+      opacity: 0.6;
+      color: var(--primary-h-color);
+    }
+
+    /* profile.css */
+
+    .right-n-c h1 {
+      font-size: 2rem;
+      color: black;
+    }
+
+    .right-n-c a {
+      text-decoration: none;
+    }
+
+    form .s-btn {
+      height: 3rem;
+      width: 32rem;
+      border: none;
+      outline: 0;
+      box-shadow: 0rem 0rem 0.3rem 0rem darkgray;
+      border-radius: 1rem;
+      font-weight: 600;
+    }
+
+    form .s-btn:hover {
+      height: 2.9rem;
+      width: 31.9rem;
+      border: none;
+      outline: 0;
+      box-shadow: inset 0rem 0rem 0.3rem 0rem darkgray;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <nav class="navbar-container">
+      <div class="hamburger" onclick="hamclick()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="left-n-c">
+        <h1>CodingAngryheart</h1>
+      </div>
+      <div class="nav-links-c">
+        <ul class="nav-a-links">
+          <li class="s-link">
+            <a href="/index"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/home.png"
+                alt="home" /></a>
+          </li>
+          <li class="s-link"><a href="/index">HTML</li></a>
+          <li class="s-link"><a href="/indexcss">CSS</li></a>
+          <li class="s-link"><a href="/indexjs">JavaScript</li></a>
+          <li class="s-link"><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="right-n-c">
+        <input class="scinput" type="text" placeholder="search here..." />
+        <img class="searchi" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+          alt="search--v1" onclick="sonclick()" />
+        <img id="darki" width="64" height="64"
+          src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/external-night-halloween-bearicons-glyph-bearicons.png"
+          alt="external-night-halloween-bearicons-glyph-bearicons" onclick="ionclick()" />
+        <a href="/signcookie" class="plink" onmousedown="onMousedown()" onmouseup="onMouseup()">
+          <h1>Profile</h1>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <section id="userstatus">
+    <div class="uscon">
+      <div class="usheadap">
+        <h1>User</h1>
+      </div>
+    </div>
+  </section>
+
+  <section id="ustatus">
+    <div class="ustatuscon">
+      <h1>Account Information</h1>
+      <div class="img">
+        <img src="userico.png" alt="image">
+      </div>
+      <div class="usscript">
+
+        <div class="usersi" style="gap: 7.8rem; letter-spacing: .1rem;">
+          <label for="email">Email: </label>
+          <h1 style="font-size: 2rem; margin: 1rem 0rem;">
+            <%=email %>
+          </h1>
+        </div>
+
+        <div class="usersi" style="gap: 2rem; letter-spacing: .1rem;">
+          <label for="status">User status: </label>
+          <h1 style="font-size: 2rem; color: green; margin-left: -0.4rem; margin: 1rem 0rem;">Active</h1>
+        </div>
+
+        <form action="/signout" method="get">
+          <button class="s-btn" style="margin-top: 2rem;">Signout</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Searchicon creation
+
+    const search = document.querySelector(".searchi");
+    const searchi = document.querySelector(".scinput");
+
+    search.sonclick = function () {
+      searchi.classList.toggle("sinput");
+    };
+
+    // darkmode icon creation
+
+    var darki = document.getElementById("darki");
+
+    darki.ionclick = function () {
+      document.body.classList.toggle("dark-theme");
+    };
+
+
+    // hamburger creation 
+
+    var hamb = document.querySelector(".hamburger");
+    var ullists = document.querySelector(".nav-a-links");
+
+    hamb.hamclick = function () {
+      ullists.classList.toggle("ul1");
+    }
+  </script>
+</body>
+
+</html>

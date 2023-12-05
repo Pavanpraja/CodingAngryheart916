@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingAngryheart</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <div id="navbar">
+      <nav class="navbar-container">
+        <div class="hamburger" onclick="hamclick()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="left-n-c">
+          <h1>CodingAngryheart</h1>
+        </div>
+        <div class="nav-links-c">
+          <ul class="nav-a-links">
+            <li class="s-link">
+              <a href="/index"
+                ><img
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/ios-filled/50/home.png"
+                  alt="home"
+                  /></a>
+            </li>
+            <li class="s-link"><a href="/index">HTML</li></a>
+          <li class="s-link"><a href="/indexcss">CSS</li></a>
+          <li class="s-link"><a href="/indexjs">JavaScript</li></a>
+            <li class="s-link"><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="right-n-c">
+          <input class="scinput" type="text" placeholder="search here..." />
+          <img
+            class="searchi"
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+            alt="search--v1"
+            onclick="sonclick()"
+          />
+          <img
+            id="darki"
+            width="64"
+            height="64"
+            src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/external-night-halloween-bearicons-glyph-bearicons.png"
+            alt="external-night-halloween-bearicons-glyph-bearicons"
+            onclick="ionclick()"
+          />
+          <a href="/signcookie" class="plink" style="text-decoration: none;" onmousedown="onMousedown()" onmouseup="onMouseup()">
+            <h1 style="font-size: 2rem; color: black;">Profile</h1>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <hr />
+
+    <section id="HTML">
+        <div class="HTML-container">
+          <h1>
+            Welcome to the HTML Tutorial
+            <img
+            width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/html-5--v2.png"
+              alt="html-5--v2"
+            />
+          </h1>
+          <p>Let's start this Tutorial with Gracefully</p>
+          <div class="HTML-a-c">
+            <div class="html-a-lc">
+              <div class="first-html-c">
+                <h2>HTML Overview</h2>
+                <br /><a href="/index">1. Introduction of HTML</a> 
+                <br /><a href="/next1">2. HTML Document Structure</a>
+                  <br /><a href="/next2">3. Page Structure of HTML</a>
+                  <br /><a href="/next3">4. Work in the Browser</a> 
+                  <br /><a href="/next4">5. Using Editors</a>
+                  <br /><a href="/next5">6.Introduction of HTML Tags, Elements and Attributes</a>
+                  <br /><a href="/next5">6.1 Explanation about HTML Tags</a>
+                  <br /> <a href="/next50">&rArr; Basic Tags of HTML</a>
+                  <br /><a href="/next51">&rArr; Phrase Tags</a>
+                  <br /><a href="/next52">&rArr; HTML Formatting Tags</a>
+                  <br /><a href="/next6">6.2 Explanation about HTML Elements</a>
+            <br /><a href="/next7">6.3 Explanation about HTML Attributes</a>
+              </div>
+              <div class="second-html-c"></div>
+              <div class="thired-html-c"></div>
+              <div class="forth-html-c"></div>
+            </div>
+  
+            <div id="ide">
+              <div class="ide-p">
+                <p>Try with copy the code &#8611;</p>
+              </div>
+              <div class="ide">
+                <div class="ide-c">
+                  <a href="https://onecompiler.com/html"><img width="100" height="100" src="https://img.icons8.com/carbon-copy/100/source-code.png"
+                    alt="source-code" /></a>
+                </div>
+              </div>
+            </div>
+            
+            <div id="struc" class="html-a-rc">
+              
+
+              
+              <h3>Work in the Browser</h3>
+             <div class="all-explore">
+              <h4>&rarr; First, let we discuss about browser.</h4>
+              <div class="explore">
+                <p>A web browser or website page is an application for accessing or rendering websites. When a user requests a web page from a particular website, the browser retrieves its files from a web server and then displays the page on the user's screen. Browsers are used on a range of devices, including desktops, laptops, tablets, and smartphones. In 2020, an estimated 4.9 billion people have used a browser. The most used browser is Google Chrome, with a 65% global market share on all devices, followed by Safari with 18%.</p>
+                <img src="browser3.jpg" alt="browserimg" style="margin:2rem 0rem; width:119rem; border-radius: 1rem; box-shadow: 0rem 0rem 1rem 0rem gray;">
+                <p>A web browser is not the same thing as a search engine, though the two are often confused. A search engine is a website that provides links to other websites. However, to connect to a website's server and display its web pages, a user must have a web browser installed. In some technical contexts, browsers are referred to as user agents.</p>
+
+               </div>
+               <h4>&rarr; Actually how does html document page work in the Browser?</h4>
+               <div class="explore">
+                <p>Here we see that, Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance. HTML elements are the building blocks of HTML pages.</p>
+                <img src="browser2.jpg" alt="browserimg" style="margin:2rem 0rem; width:119rem; border-radius: 1rem; box-shadow: 0rem 0rem 1rem 0rem gray;">
+               </div>
+
+               <h4>&rarr; Let's see rendering process with network request...</h4>
+               <div class="explore">
+                <p>The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client (you go to the shop and order your goods). This message, and all other data sent between the client and the server, is sent across your internet connection using TCP/IP.</p>
+                <p>The client (usually a browser) opens a connection to the server and sends a request. The server processes the request, generates a response, and closes the connection if it finds a Connection: Close header.</p>
+                <img src="browser1.jpg" alt="browserimg" style="margin:2rem 0rem; width:119rem; border-radius: 1rem; box-shadow: 0rem 0rem 1rem 0rem gray;">
+                <p>It's a text document saved with the extension  or .htm that contains texts and some tags written between "&lt; &gt;" which give the instructions needed to configure the web page.</p>
+                <p>These tags are fixed and definite. About the structure of html document is explained further.</p>
+               </div>
+
+             </div>
+           </div>
+  
+  
+          </div>
+          
+          
+        </div>
+      </div>
+  
+        <div class="previous-next-b">
+          <a href="/next2"><button class="btn" onclick="previous()">&larr;Previous</button></a>
+          <a href="/next4"><button class="btn" onclick="next()">Next&rarr;</button></a>
+        </div>
+  
+      </section>
+
+    </body>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+      
+      // Searchicon creation
+      
+      const search = document.querySelector(".searchi");
+      const searchi = document.querySelector(".scinput");
+      
+      search.sonclick = function () {
+        searchi.classList.toggle("sinput");
+      };
+      
+      // darkmode icon creation
+  
+      var darki = document.getElementById("darki");
+  
+      darki.ionclick = function () {
+        document.body.classList.toggle("dark-theme");
+      };
+  
+      //create previous or next button 
+  
+      var visibleDiv = 0;
+      function showDive(){
+        $("-a-rc").hide();
+        $("-a-rc:eq("+ visibleDiv +")").show();
+      }
+      showDive()
+      function next(){
+        if(visibleDiv== $("-a-rc").length-1){
+          visibleDiv = 0;
+        }
+        else{
+          visibleDiv ++;
+        }
+        showDive();
+      }
+      function previous(){
+        if(visibleDiv== 0){
+          visibleDiv= $("-a-rc").length-1;
+        }
+        else{
+          visibleDiv --;
+        }
+        showDive();
+      }
+  
+    </script>
+  </html>

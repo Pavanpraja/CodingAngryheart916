@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingAngryheart</title>
+    <link rel="stylesheet" href="/signup.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <section id="signup">
+        <div class="signup-container">
+            <h1>Welcome to CodingAngryheart</h1>
+            <p>Create your personal account</p>
+            <div class="sform">
+                <form action="/signup" method="POST">
+                    <label for="email">Enter your email</label>
+                    <input type="email" name="email" class="f-i" value="<%=locals.email %>" required>
+                    <label for="password">Enter your password</label>
+                    <input type="password" name="password" class="f-i" min="3" required>
+                    <p style="color: red; font-size: 1.5rem;margin-left: 0rem;text-shadow: 0rem 0rem 0.1rem black;">
+                        <%= locals.message %>
+                    </p>
+                    <div class="agree"><input type="radio">
+                        <h2>I agree to CodingAngryheart's<span><a href="#">Terms of services</a></span></h2>
+                    </div>
+                    <button class="s-btn">Signup</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+
+    </script>
+</body>
+
+</html>

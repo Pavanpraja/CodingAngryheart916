@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingAngryheart</title>
+    <link rel="stylesheet" href="/indexjs.css" />
+    <link href="/nextjs1">
+</head>
+
+<body>
+    <div id="navbar">
+        <nav class="navbar-container">
+            <div class="hamburger" onclick="hamclick()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="left-n-c">
+                <h1>CodingAngryheart</h1>
+            </div>
+            <div class="nav-links-c">
+                <ul class="nav-a-links">
+                    <li class="s-link">
+                        <a href="/indexjs"><img width="50" height="50"
+                                src="https://img.icons8.com/ios-filled/50/home.png" alt="home" /></a>
+                    </li>
+                    <li class="s-link"><a href="/index">HTML</li></a>
+                    <li class="s-link"><a href="/indexcss">CSS</li></a>
+                    <li class="s-link"><a href="/indexjs">JavaScript</li></a>
+                    <li class="s-link"><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right-n-c">
+                <input class="scinput" type="text" placeholder="search here..." />
+                <img class="searchi" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+                    alt="search--v1" onclick="sonclick()" />
+                <img id="darki" width="64" height="64"
+                    src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/external-night-halloween-bearicons-glyph-bearicons.png"
+                    alt="external-night-halloween-bearicons-glyph-bearicons" onclick="ionclick()" />
+                <a href="/signout"><button id="sn-btn">Signout</button></a>
+            </div>
+        </nav>
+    </div>
+    <hr />
+
+    <section id="HTML">
+        <div class="HTML-container">
+            <h1>
+                Welcome to the JavaScript Tutorial
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/css3.png" alt="css3" />
+            </h1>
+            <p>Let's start this Tutorial with Gracefully</p>
+            <div class="HTML-a-c">
+                <div class="html-a-lc">
+                    <div class="first-html-c">
+                        <h2>CSS Overview</h2>
+                        <br /><a href="/indexjs">1. Introduction</a>
+                        <br /><a href="/stepjs1">2. Working of JavaScript</a>
+                        <br /><a href="/stepjs2">3. Rendering of JavaScript</a>
+                        <br /><a href="/stepjs3">4. Show output methods</a>
+                        <br /><a href="/stepjs4">5. Operators</a>
+                        <br /><a href="/stepjs41">i. Arithmetic Operators</a>
+                        <br /><a href="/stepjs42">ii. Assignment Operators</a>
+                        <br /><a href="/stepjs43">iii. String Operators</a>
+                        <br /><a href="/stepjs44">iv. Logical Operators</a>
+                        <br /><a href="/stepjs45">v. Comparison Operators</a>
+                        <br /><a href="/stepjs46">vii. Bitwise Operators</a>
+                        <br /><a href="/stepjs47">viii. Type Operators</a>
+                        <br /><a href="/stepjs5">6. Variables</a>
+
+                    </div>
+                    <div class="second-html-c"></div>
+                    <div class="thired-html-c"></div>
+                    <div class="forth-html-c"></div>
+                </div>
+
+                <div id="ide">
+                    <div class="ide-p">
+                        <p>Try with copy the code &#8611;</p>
+                    </div>
+                    <div class="ide">
+                        <div class="ide-c">
+                            <a href="https://onecompiler.com/html"><img width="100" height="100" src="https://img.icons8.com/carbon-copy/100/source-code.png"
+                                alt="source-code" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="intro" class="html-a-rc">
+
+
+                    <div class="all-explore">
+                        <h3>Show output methods</h3>
+                        <h4>&rarr; Let's we describe actually in JavaScript is how many types we can show the output ?
+                        </h4>
+
+                        <div class="explore">
+                            <p style="margin-top: 1rem; margin-left: 1rem;">We can display the data given in the <b>Code
+                                    in
+                                    JavaScript</b> in different ways;
+                            </p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">&#x2022; Writing into an HTML element, using
+                                innerHTML property.</p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">&#x2022; Writing into the HTML output using
+                                document.write() method.</p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">&#x2022; Writing into an alert box, using
+                                window.alert() method.</p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">&#x2022; Writing into the browser console,
+                                using console.log() method.</p>
+                        </div>
+
+                        <h4>&rarr; Using innerHTML property</h4>
+                        <div class="explore">
+                            <p style="margin-top: 1rem; margin-left: 1rem;">innerHTML is an HTML element property that
+                                has two uses for web developer:</p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">1) You can use it to get the internal HTML
+                                content of any HTML element as an HTML
+                                string.</p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">2) You can also use it to set or change
+                                elements' innerHTML content.</p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Let's try to understand this property with
+                                some lines of codes;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using innerHTML&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1&gt;Welcome&lt;/h1&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;p id="demo"&gt;&lt;/p&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    document.getElementById("demo").innerHTML = "Hello everyone how are you"; <span
+                                        style="color: rgb(155, 155, 155);">//here through id with getElementById method
+                                        we can get the html elements</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+                        </div>
+                        <h4>&rarr; Using document.write() method.</h4>
+                        <div class="explore">
+                            <p style="margin-top: 1rem; margin-left: 1rem;">The write() method in HTML is used to write
+                                some content or JavaScript code in a Document. This method is mostly used for testing
+                                purposes. It is used to delete all the content from the HTML document and inserts the
+                                new content. It is also used to give additional text to an output that is opened by the
+                                document.</p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Let's try to understand this property with
+                                some lines of codes;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using document.write&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1&gt;Welcome&lt;/h1&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    document.write("Hello everyone how are you"); <span
+                                        style="color: rgb(155, 155, 155);"> //here through .write method you can access
+                                        the document and perform updation</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <h4>&rarr; Using window.alert() method.</h4>
+                        <div class="explore">
+                            <p style="margin-top: 1rem; margin-left: 1rem;">window.alert() instructs the browser to
+                                display a dialog with an optional message, and to wait until the user dismisses the
+                                dialog. Under some conditions — for example, when the user switches tabs — the browser
+                                may not actually display a dialog, or may not wait for the user to dismiss the dialog.
+                            </p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Let's try to understand this property with
+                                some lines of codes;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using window.alert() method.&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1&gt;Welcome&lt;/h1&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    window.alert("Hello everyone how are you"); <span
+                                        style="color: rgb(155, 155, 155);"> //here through .alert method
+                                        we can display the alert or message for the user suggestion</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <h4>&rarr; Using console.log() method.</h4>
+                        <div class="explore">
+                            <p style="margin-top: 1rem; margin-left: 1rem;">&#x2022; console.log() method outputs a
+                                message
+                                to the web console. The message may be a single string with optional substitution
+                                values, or it may be any one or more JavaScript objects.</p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">&#x2022; To run JavaScript on the browser,
+                                right-click in a webpage and then select Inspect. DevTools opens. Or, press Ctrl+Shift+J
+                                (Windows, Linux) or Command+Option+J (macOS), to directly open the DevTools console. If
+                                necessary, click in DevTools to give it focus, and then press Esc to open the Console.
+                            </p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Let's try to understand this property with
+                                some lines of codes;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using console.log() method.&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1&gt;Welcome&lt;/h1&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    console.log("Hello everyone how are you"); <span style="color: rgb(155, 155, 155);">
+                                        //here through .alert method
+                                        we can display the alert or message for the user suggestion</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="previous-next-b">
+                <a href="/stepjs2"><button class="btn">&larr;Previous</button></a>
+                <a href="/stepjs4"><button class="btn">Next&rarr;</button></a>
+            </div>
+    </section>
+
+    <section id="footer">
+        <div class="foo-container">
+            <h1><img src="st (2).jpg" alt="logo"><big> @</big>CodingAngryheart</h1>
+            <p>Welcome to our best learning plateform and Follow us through these social media's to keep learning and
+                explore
+                mind thoughts. If you have any question in your mind,<br> ask through social media's or contact page.
+            </p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100067532370640&mibextid=ZbWKwL"><img width="24"
+                        height="24" src="https://img.icons8.com/material/24/facebook-new.png" alt="facebook-new" /></a>
+                <a href="https://instagram.com/pavanprajapati9206?igshid=NGExMmI2YTkyZg=="><img width="24" height="24"
+                        src="https://img.icons8.com/material/24/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                <a href="https://github.com/Pavanpraja"><img width="24" height="24"
+                        src="https://img.icons8.com/material/24/github.png" alt="github" /></a>
+                <a
+                    href="https://www.linkedin.com/in/pavan-prajapati-8a348626b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B2NPwgjDTRW28Ni%2BJv5OEgw%3D%3D"><img
+                        width="24" height="24" src="https://img.icons8.com/material/24/linkedin--v1.png"
+                        alt="linkedin--v1" /></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Copyright &copy; 2023 CodingAngryheart.com
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+<script>
+    // Searchicon creation
+
+    const search = document.querySelector(".searchi");
+    const searchi = document.querySelector(".scinput");
+
+    search.sonclick = function () {
+        searchi.classList.toggle("sinput");
+    };
+
+    // darkmode icon creation
+
+    var darki = document.getElementById("darki");
+
+    darki.ionclick = function () {
+        document.body.classList.toggle("dark-theme");
+    };
+
+
+    // hamburger creation 
+
+    var hamb = document.querySelector(".hamburger");
+    var ullists = document.querySelector(".nav-a-links");
+
+    hamb.hamclick = function () {
+        ullists.classList.toggle("ul1");
+    }
+    // profile customization
+
+    var prol = document.querySelector(".plink");
+
+    onMousedown = () => {
+        prol.style.opacity = "0.5"
+    }
+    onMouseup = () => {
+        prol.style.opacity = "1"
+    }
+</script>
+<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+<script>
+    // create a loader
+
+    window.addEventListener("load", () => {
+        var a = document.querySelector(".i-loading");
+        a.classList.add("h-loading");
+    })
+
+    // typescript
+
+    var typed = new Typed(".htyped", {
+        strings: [
+            "Hello...",
+            " Welcome to Our Coding Plateform ",
+            "In this Plateform",
+            "we will explore about Many languages like...",
+            "HTML",
+            "CSS",
+            "JavaScript",
+        ],
+        typeSpeed: 60,
+        backSpeed: 10,
+        loop: true,
+    });
+
+
+</script>
+
+</html>

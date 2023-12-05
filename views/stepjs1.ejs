@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodingAngryheart</title>
+  <link rel="stylesheet" href="/indexjs.css" />
+  <link href="/nextjs1">
+</head>
+
+<body>
+  <div id="navbar">
+    <nav class="navbar-container">
+      <div class="hamburger" onclick="hamclick()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="left-n-c">
+        <h1>CodingAngryheart</h1>
+      </div>
+      <div class="nav-links-c">
+        <ul class="nav-a-links">
+          <li class="s-link">
+            <a href="/indexjs"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/home.png"
+                alt="home" /></a>
+          </li>
+          <li class="s-link"><a href="/index">HTML</li></a>
+          <li class="s-link"><a href="/indexcss">CSS</li></a>
+          <li class="s-link"><a href="/indexjs">JavaScript</li></a>
+          <li class="s-link"><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="right-n-c">
+        <input class="scinput" type="text" placeholder="search here..." />
+        <img class="searchi" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+          alt="search--v1" onclick="sonclick()" />
+        <img id="darki" width="64" height="64"
+          src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/external-night-halloween-bearicons-glyph-bearicons.png"
+          alt="external-night-halloween-bearicons-glyph-bearicons" onclick="ionclick()" />
+        <a href="/signout"><button id="sn-btn">Signout</button></a>
+      </div>
+    </nav>
+  </div>
+  <hr />
+
+  <section id="HTML">
+    <div class="HTML-container">
+      <h1>
+        Welcome to the JavaScript Tutorial
+        <img width="50" height="50" src="https://img.icons8.com/ios/50/css3.png" alt="css3" />
+      </h1>
+      <p>Let's start this Tutorial with Gracefully</p>
+      <div class="HTML-a-c">
+        <div class="html-a-lc">
+          <div class="first-html-c">
+            <h2>CSS Overview</h2>
+            <br /><a href="/indexjs">1. Introduction</a>
+            <br /><a href="/stepjs1">2. Working of JavaScript</a>
+            <br /><a href="/stepjs2">3. Rendering of JavaScript</a>
+            <br /><a href="/stepjs3">4. Show output methods</a>
+            <br /><a href="/stepjs4">5. Operators</a>
+            <br /><a href="/stepjs41">i. Arithmetic Operators</a>
+            <br /><a href="/stepjs42">ii. Assignment Operators</a>
+            <br /><a href="/stepjs43">iii. String Operators</a>
+            <br /><a href="/stepjs44">iv. Logical Operators</a>
+            <br /><a href="/stepjs45">v. Comparison Operators</a>
+                        <br /><a href="/stepjs46">vii. Bitwise Operators</a>
+                        <br /><a href="/stepjs47">viii. Type Operators</a>
+                        <br /><a href="/stepjs5">6. Variables</a>
+
+          </div>
+          <div class="second-html-c"></div>
+          <div class="thired-html-c"></div>
+          <div class="forth-html-c"></div>
+        </div>
+
+        <div id="ide">
+          <div class="ide-p">
+            <p>Try with copy the code &#8611;</p>
+          </div>
+          <div class="ide">
+            <div class="ide-c">
+              <a href="https://onecompiler.com/html"><img width="100" height="100" src="https://img.icons8.com/carbon-copy/100/source-code.png"
+                alt="source-code" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="intro" class="html-a-rc">
+
+
+          <div class="all-explore">
+            <h3>Working of JavaScript</h3>
+            <h4>&rarr; Let's we describe actually how does JavaScript working.</h4>
+
+            <div class="explore">
+              <p style="margin-top: 1rem; margin-left: 1rem;">JavaScript is a single-threaded programming language,
+                which means it has a single Call Stack. Therefore it can do one thing at a time. The Call Stack is a
+                data structure which records basically where in the program we are. If we step into a function, we put
+                it on the top of the stack.
+                <br>
+                Unlike most programming languages, JavaScript language has no concept of input or output. It is designed
+                to run as a scripting language in a host environment, and it is up to the host environment to provide
+                mechanisms for communicating with the outside world. The most common host environment is the browser
+              </p>
+            </div>
+            <div class="explore">
+              <img src="jsworking.jpg" alt="image"
+                style="margin:2rem 0rem; width:70rem; border-radius: 1rem; box-shadow: 0rem 0rem 1rem 0rem gray; filter: invert(0.8);">
+
+              <p style="margin-top: 1rem; margin-left: 1rem;"><big>Here's a <b>step-by-step</b> breakdown of how
+                  JavaScript
+                  works in a <b>web browser :</b><br></big><br>
+
+                <big><b>1. Requesting a Web Page: </b></big> When you enter a URL or click a link in your web browser,
+                it sends a request to a web server to retrieve a specific web page.
+                <br><br>
+                <big><b>2. Receiving HTML and CSS: </b></big> The web server responds by sending the requested web
+                page's HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) files.
+                <br><br>
+                <big><b>3. Parsing HTML and Building the DOM: </b></big> The browser parses the HTML and constructs the
+                Document Object Model (DOM). The DOM is a hierarchical representation of the web page's structure, where
+                each HTML element becomes a node in the DOM tree.
+                <br><br>
+                <big><b>4. Loading CSS and Creating the CSSOM: </b></big> Simultaneously, the browser processes the CSS
+                to create the Cascading Style Sheet Object Model (CSSOM). The CSSOM contains information about the
+                styles and layout of the web page.
+                <br><br>
+                <big><b>5. Rendering the Initial Web Page: </b></big> With the DOM and CSSOM in place, the browser
+                renders the initial web page based on the HTML and CSS information. This renders the web page with its
+                initial structure and styling.
+                <br><br>
+                <big><b>6. Encountering JavaScript Code: </b></big>
+
+                If the web page includes JavaScript code (either embedded within the HTML or linked as an external
+                file), the browser recognizes it as it parses the HTML.
+                <br><br>
+                <big><b>7. JavaScript Execution: </b></big>
+
+                The browser's JavaScript engine (e.g., V8 in Google Chrome or SpiderMonkey in Firefox) interprets and
+                executes the JavaScript code. The execution happens line by line.
+                <br><br>
+                <big><b>8. Manipulating the DOM: </b></big>
+
+                JavaScript can interact with and manipulate the DOM. It can select HTML elements, change their content,
+                styles, or attributes, and even create new elements. This dynamic interaction enhances the web page's
+                interactivity.
+                <br><br>
+                <big><b>9. Event Handling: </b></big>
+
+                JavaScript is event-driven. It can set up event listeners to respond to various events like user
+                interactions (clicks, keystrokes), form submissions, mouse movements, and more.
+                <br><br>
+                <big><b>10. Asynchronous Operations: </b></big>
+
+                JavaScript can manage asynchronous tasks, such as making network requests (e.g., AJAX), handling timers,
+                or dealing with data from external sources. Callbacks, promises, and async/await are used to handle
+                asynchronous operations effectively.
+                <br><br>
+                <big><b>11. Updating the DOM and Rendering: </b></big>
+
+                As JavaScript code executes, it may modify the DOM. These changes are reflected in the web page's
+                content and appearance. JavaScript can add, remove, or modify elements and styles in real-time.
+                <br><br>
+                <big><b>12. Debugging and Development Tools: </b></big>
+
+                Web browsers come with developer tools that allow developers to inspect, debug, and profile JavaScript
+                code. This includes features like setting breakpoints, watching variable values, and analyzing the call
+                stack.
+                <br><br>
+                <big><b>13. Interacting with the User: </b></big>
+
+                JavaScript can provide feedback to users, such as displaying alerts, confirming actions, or updating the
+                page without requiring a full page refresh.
+                <br><br>
+                <big><b>14. Working with APIs and Servers: </b></big>
+
+                JavaScript can make requests to external servers and APIs, fetch data, and update the web page based on
+                the received information.
+                <br><br>
+                <big><b>15. Providing a Rich User Experience: </b></big>
+
+                By enhancing interactivity and dynamic behavior, JavaScript contributes to a richer, more engaging user
+                experience on the web.
+                <br><br>
+              </p>
+              <br>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="previous-next-b">
+        <a  href="/indexjs"><button class="btn">&larr;Previous</button></a>
+        <a href="/stepjs2"><button class="btn">Next&rarr;</button></a>
+      </div>
+  </section>
+
+  <section id="footer">
+    <div class="foo-container">
+      <h1><img src="st (2).jpg" alt="logo"><big> @</big>CodingAngryheart</h1>
+      <p>Welcome to our best learning plateform and Follow us through these social media's to keep learning and explore
+        mind thoughts. If you have any question in your mind,<br> ask through social media's or contact page. </p>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100067532370640&mibextid=ZbWKwL"><img width="24" height="24"
+            src="https://img.icons8.com/material/24/facebook-new.png" alt="facebook-new" /></a>
+        <a href="https://instagram.com/pavanprajapati9206?igshid=NGExMmI2YTkyZg=="><img width="24" height="24"
+            src="https://img.icons8.com/material/24/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+        <a href="https://github.com/Pavanpraja"><img width="24" height="24"
+            src="https://img.icons8.com/material/24/github.png" alt="github" /></a>
+        <a
+          href="https://www.linkedin.com/in/pavan-prajapati-8a348626b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B2NPwgjDTRW28Ni%2BJv5OEgw%3D%3D"><img
+            width="24" height="24" src="https://img.icons8.com/material/24/linkedin--v1.png" alt="linkedin--v1" /></a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    Copyright &copy; 2023 CodingAngryheart.com
+  </footer>
+</body>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+  integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+<script>
+  // Searchicon creation
+
+  const search = document.querySelector(".searchi");
+  const searchi = document.querySelector(".scinput");
+
+  search.sonclick = function () {
+    searchi.classList.toggle("sinput");
+  };
+
+  // darkmode icon creation
+
+  var darki = document.getElementById("darki");
+
+  darki.ionclick = function () {
+    document.body.classList.toggle("dark-theme");
+  };
+
+
+  // hamburger creation 
+
+  var hamb = document.querySelector(".hamburger");
+  var ullists = document.querySelector(".nav-a-links");
+
+  hamb.hamclick = function () {
+    ullists.classList.toggle("ul1");
+  }
+  // profile customization
+
+  var prol = document.querySelector(".plink");
+
+  onMousedown = () => {
+    prol.style.opacity = "0.5"
+  }
+  onMouseup = () => {
+    prol.style.opacity = "1"
+  }
+</script>
+<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+<script>
+  // create a loader
+
+  window.addEventListener("load", () => {
+    var a = document.querySelector(".i-loading");
+    a.classList.add("h-loading");
+  })
+
+  // typescript
+
+  var typed = new Typed(".htyped", {
+    strings: [
+      "Hello...",
+      " Welcome to Our Coding Plateform ",
+      "In this Plateform",
+      "we will explore about Many languages like...",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    typeSpeed: 60,
+    backSpeed: 10,
+    loop: true,
+  });
+
+
+</script>
+
+</html>

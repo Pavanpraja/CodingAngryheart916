@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingAngryheart</title>
+    <link rel="stylesheet" href="/contact.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div id="navbar">
+        <nav class="navbar-container">
+          <div class="hamburger" onclick="hamclick()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="left-n-c">
+            <h1>CodingAngryheart</h1>
+          </div>
+          <div class="nav-links-c">
+            <ul class="nav-a-links">
+              <li class="s-link">
+                <a href="/index"
+                  ><img
+                    width="50"
+                    height="50"
+                    src="https://img.icons8.com/ios-filled/50/home.png"
+                    alt="home"
+                /></a>
+              </li>
+              <li class="s-link"><a href="/index">HTML</li></a>
+              <li class="s-link"><a href="/indexcss">CSS</li></a>
+              <li class="s-link"><a href="/indexjs">JavaScript</li></a>
+              <li class="s-link"><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="right-n-c">
+            <input class="scinput" type="text" placeholder="search here...">
+            <img
+            class="searchi"
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+              alt="search--v1" onclick="sonclick()"
+            />
+            <img
+            id="darki"
+              width="64"
+              height="64"
+              src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/external-night-halloween-bearicons-glyph-bearicons.png"
+              alt="external-night-halloween-bearicons-glyph-bearicons" onclick="ionclick()"
+            />
+            <a href="/signcookie" class="plink" style="text-decoration: none;" onmousedown="onMousedown()" onmouseup="onMouseup()">
+              <h1 style="font-size: 2rem; color: black;">Profile</h1>
+            </a>
+          </div>
+        </nav>
+      </div>
+    <section id="contact">
+        <div class="contact-container">
+            <h1>Contact With Us<img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/ringer-volume.png" alt="ringer-volume"/></h1>
+            <p>If you have any Issues/Doubts about any particular topic in your mind, then you can contact us through this contact form, we will be happy and we will try our best to resolve that question and answer that question in front of all of you. will try thanks</p>
+            <form action="#">
+                <input type="name" placeholder="Enter Your Username" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="password" placeholder="Enter Your Password" required>
+                <input type="tel" placeholder="Enter Your Contact Number" maxlength="10" required>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="About You and Your question..." required></textarea>
+                <button id="c-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+       // Searchicon creation 
+
+    const search = document.querySelector(".searchi");
+    const searchi = document.querySelector(".scinput");
+
+    search.sonclick = function() {
+      searchi.classList.toggle("sinput");
+    } 
+
+    // darkmode icon creation
+
+    var darki = document.getElementById("darki");
+
+    darki.ionclick = function () {
+      document.body.classList.toggle("dark-theme");
+    };
+
+
+    // hamburger creation 
+
+    var hamb = document.querySelector(".hamburger");
+    var ullists = document.querySelector(".nav-a-links");
+
+    hamb.hamclick = function(){
+      ullists.classList.toggle("ul1");
+    }
+    </script>
+</body>
+</html>

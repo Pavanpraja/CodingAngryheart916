@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingAngryheart</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <div id="navbar">
+      <nav class="navbar-container">
+        <div class="hamburger" onclick="hamclick()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="left-n-c">
+          <h1>CodingAngryheart</h1>
+        </div>
+        <div class="nav-links-c">
+          <ul class="nav-a-links">
+            <li class="s-link">
+              <a href="/index"
+                ><img
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/ios-filled/50/home.png"
+                  alt="home"
+                  /></a>
+            </li>
+            <li class="s-link"><a href="/index">HTML</li></a>
+          <li class="s-link"><a href="/indexcss">CSS</li></a>
+          <li class="s-link"><a href="/indexjs">JavaScript</li></a>
+            <li class="s-link"><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="right-n-c">
+          <input class="scinput" type="text" placeholder="search here..." />
+          <img
+            class="searchi"
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+            alt="search--v1"
+            onclick="sonclick()"
+          />
+          <img
+            id="darki"
+            width="64"
+            height="64"
+            src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/external-night-halloween-bearicons-glyph-bearicons.png"
+            alt="external-night-halloween-bearicons-glyph-bearicons"
+            onclick="ionclick()"
+          />
+          <a href="/signcookie" class="plink" style="text-decoration: none;" onmousedown="onMousedown()" onmouseup="onMouseup()">
+            <h1 style="font-size: 2rem; color: black;">Profile</h1>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <hr />
+
+    <section id="HTML">
+        <div class="HTML-container">
+          <h1>
+            Welcome to the HTML Tutorial
+            <img
+            width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/html-5--v2.png"
+              alt="html-5--v2"
+            />
+          </h1>
+          <p>Let's start this Tutorial with Gracefully</p>
+          <div class="HTML-a-c">
+            <div class="html-a-lc">
+              <div class="first-html-c">
+                <h2>HTML Overview</h2>
+                <br /><a href="/index">1. Introduction of HTML</a> 
+                <br /><a href="/next1">2. HTML Document Structure</a>
+                  <br /><a href="/next2">3. Page Structure of HTML</a>
+                  <br /><a href="/next3">4. Work in the Browser</a> 
+                  <br /><a href="/next4">5. Using Editors</a>
+                  <br /><a href="/next5">6.Introduction of HTML Tags, Elements and Attributes</a>
+                  <br /><a href="/next5">6.1 Explanation about HTML Tags</a>
+                  <br /> <a href="/next50">&rArr; Basic Tags of HTML</a>
+                  <br /><a href="/next51">&rArr; Phrase Tags</a>
+                  <br /><a href="/next52">&rArr; HTML Formatting Tags</a>
+                  <br /><a href="/next6">6.2 Explanation about HTML Elements</a>
+            <br /><a href="/next7">6.3 Explanation about HTML Attributes</a>
+              </div>
+              <div class="second-html-c"></div>
+              <div class="thired-html-c"></div>
+              <div class="forth-html-c"></div>
+              </div>
+  
+              <div id="ide">
+                <div class="ide-p">
+                  <p>Try with copy the code &#8611;</p>
+                </div>
+                <div class="ide">
+                  <div class="ide-c">
+                    <a href="https://onecompiler.com/html"><img width="100" height="100" src="https://img.icons8.com/carbon-copy/100/source-code.png"
+                      alt="source-code" /></a>
+                  </div>
+                </div>
+              </div>
+              
+            <div id="struc" class="html-a-rc">
+              
+
+              
+              <h3>Basic HTML Document Tags</h3>
+              <p style="font-size: 2rem; margin: 2rem 2rem;">&rarr; Basic HTML Tags provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. <br>&rarr; It can embed script in languages such as JavaScript which affect the behavior of HTML webpage. <br>&rarr; HTML can also be used to include Casecading Style Sheets (CSS) to define the appearance and layout of text.</p>
+             <div class="all-explore">
+
+               <!-- <h4>&rarr; </h4>  -->
+              <div class="basic-container">
+                <div class="top-b-c">
+                  <h1>Tags</h1>
+                  <h2>About</h2>
+                </div>
+                <div class="f-s-container">
+                  <div class="first-b-c">
+                    <p>&lt;!-- content --&gt;</p>
+                    <p>&lt;!Document&gt;</p>
+                    <p>&lt;head&gt;</p>
+                    <br>
+                    <p>&lt;meta&gt;</p>
+                    <br>
+                    <p>&lt;title&gt;</p>
+                    <p>&lt;body&gt;</p>
+                    <p>&lt;h1&gt; content &lt;/h1&gt;</p>
+                    <p>&lt;p&gt;content&lt;/p&gt;</p>
+                    <br>
+                    <p>&lt;center&gt;text&lt;/center&gt;</p>
+                    <p>&lt;hr /&gt;</p>
+                    <br>
+                    <p> &lt;br /&gt;</p>
+                  </div>
+                  <div class="second-b-c">
+                    <p>The comment tag is used to insert comments in the source code.</p>
+                    <p>It is an "information" to the browser about what document type to expect.</p>
+                    <p>The &lt;head&gt; tag is a container for metadata or title and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.</p>
+                    <p>Meta tags are pieces of information you use to tell the search engines and those viewing your site more about your page and the information it contains.</p>
+                    <p>The &lt;title&gt; tag is an HTML code tag that allows you to give a web page a title.</p>
+                    <p>The &lt;body&gt; tag in html code defines the document's body.</p>
+                    <p>Heading tag is used to show the docuemnt structure. It always start with new line.</p>
+                    <p>A paragraph also starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+                    <p>The center tag are used to set the alignment of text into the center.</p>
+                    <p>The &lt;hr&gt; stands for horizontal rule or it is an empty tag, and used to create a horizontal line in html code</p>
+                    <p>wherever you want a line break then you can use &lt;br&gt;. This is an empty tag which means that it has no end tag.</p>
+          
+                  </div>
+                </div>
+              </div>
+              <div class="explore">
+                <p style="margin: 1rem 0rem; font-size: 2.2rem;">Let me try to explain you all these tags through a HTML code, so let's start;</p>
+
+                <h4>&rarr; Heading Tag</h4>
+                <p>Any document starts with a heading. You can use different sizes for your headings. HTML also
+                  has six levels of headings, which use the elements &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and
+                  &lt;h6&gt;. While displaying any heading, browser adds one line before and one line after that
+                  heading.</p>
+                <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                <p style="color: rgb(155, 155, 155);">&lt;!-- Welcome to html Tutorial --&gt;</p>
+<br>
+                <p style="color: rgb(190, 190, 190);">&lt;!DOCTYPE html&gt;</p>
+                <p style="color: rgb(190, 190, 190);">&lt;html&lt;html lang="en"&gt;</p>
+                <p style="color: rgb(190, 190, 190);">&lt;head&gt;</p>
+                    <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;meta charset="UTF-8"&gt;</p>
+                    <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+                    <p style="color: rgb(190, 190, 190);">&lt;title&gt;Heading Tag&lt;/title&gt;</p>
+                <p style="color: rgb(190, 190, 190);">&lt;/head&gt;</p>
+                <p style="color: rgb(190, 190, 190);">&lt;body&gt;</p>
+                  <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;h1&gt;This is first heading of this code&lt;/h1&gt;</p>
+                  <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;h2&gt;This is second heading of this code&lt;/h2&gt;</p>
+                  <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;h3&gt;This is third heading of this code&lt;/h3&gt;</p>
+                  <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;h4&gt;This is forth heading of this code&lt;/h4&gt;</p>
+                  <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;h5&gt;This is fifth heading of this code&lt;/h5&gt;</p>
+                  <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;h6&gt;This is sixth heading of this code&lt;/h6&gt;</p>   
+                  <p style="color: rgb(190, 190, 190);">&lt;/body&gt;</p>
+                  <p style="color: rgb(190, 190, 190);">&lt;/html&gt;</p>
+              </div>
+              <p style="margin: 1rem 0rem; font-size: 2.2rem;">Let see output of this entire code through live server on the brwser;</p>
+              <img src="Screenshot (161).png" alt="output" style="margin:2rem 0rem; width:119rem; border-radius: 1rem; box-shadow: 0rem 0rem 1rem 0rem gray;">
+              
+
+              <h4>&rarr; Paragraph Tag</h4>
+              <p>Any document starts with a heading. You can use different sizes for your headings. HTML also
+                has six levels of headings, which use the elements &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and
+                &lt;h6&gt;. While displaying any heading, browser adds one line before and one line after that
+                heading.</p>
+              <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+              <p style="color: rgb(190, 190, 190);">&lt;body&gt;</p>
+                 <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;p&gt;This is first paragraph of this code&lt;/p&gt;</p>
+                 <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;p&gt;This is second paragraph of this code&lt;/p&gt;</p>
+                 <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;p&gt;This is third paragraph of this code&lt;/p&gt;</p>
+                 <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;p&gt;This is forth paragraph of this code&lt;/p&gt;</p>
+                 <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;p&gt;This is fifth paragraph of this code&lt;/p&gt;</p>
+                 <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;p&gt;This is sixth paragraph of this code&lt;/p&gt;</p>  
+              <p style="color: rgb(190, 190, 190);">&lt;/body&gt;</p>
+            </div>
+              <p style="margin: 1rem 0rem; font-size: 2.2rem;">Let see output of this entire code through live server on the brwser;</p>
+              <img src="Screenshot (162).png" alt="output" style="margin:2rem 0rem; width:119rem; border-radius: 1rem; box-shadow: 0rem 0rem 1rem 0rem gray;">
+
+
+              <h4>&rarr; &lt;center&gt; Tag</h4>
+              <p>You can use &lt;center&gt; tag to put any content in the center of the page or any table cell.
+              </p>
+              <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+              <p style="color: rgb(190, 190, 190);">&lt;body&gt;</p>
+                 <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;p&gt;This is first paragraph of this code&lt;/p&gt;</p>
+                 <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;center&gt;This is second paragraph of this code&lt;/center&gt;</p>  
+              <p style="color: rgb(190, 190, 190);">&lt;/body&gt;</p>
+            </div>
+              <p style="margin: 1rem 0rem; font-size: 2.2rem;">Let see output of this entire code through live server on the brwser;</p>
+              <img src="Screenshot (165).png" alt="output" style="margin:2rem 0rem; width:119rem; border-radius: 1rem; box-shadow: 0rem 0rem 1rem 0rem gray;">
+
+
+              <h4>&rarr; &lt;br /&gt; Tag</h4>
+              <p>Whenever you use the &lt;br /&gt; element, anything following it starts from the next line. This
+                tag is an example of an empty element, where you do not need opening and closing tags, as
+                there is nothing to go in between them.</p>
+              <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+              <p style="color: rgb(190, 190, 190);">&lt;body&gt;</p>
+                 <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;p&gt;This is a paragraph of this code and i hope you will &lt;br /&gt; enjoy &lt;br /&gt; in this plateform let see how &lt;br /&gt; "&lt;br /&gt;" tag work actually&lt;/p&gt;</p>
+              <p style="color: rgb(190, 190, 190);">&lt;/body&gt;</p>
+            </div>
+              <p style="margin: 1rem 0rem; font-size: 2.2rem;">Let see output of this entire code through live server on the brwser;</p>
+              <img src="Screenshot (163).png" alt="output" style="margin:2rem 0rem; width:119rem; border-radius: 1rem; box-shadow: 0rem 0rem 1rem 0rem gray;">
+
+              
+              <h4>&rarr; &lt;hr /&gt; Tag</h4>
+              <p>Horizontal lines are used to visually break-up sections of a document. The &lt;hr /&gt; tag creates
+                a line from the current position in the document to the right margin and breaks the line
+                accordingly.
+              </p>
+              <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+              <p style="color: rgb(190, 190, 190);">&lt;body&gt;</p>
+                 <p style="color: rgb(190, 190, 190); margin-left: 4rem;">&lt;p&gt;This is a paragraph of this code and i hope you will &lt;hr /&gt; enjoy &lt;hr /&gt; in this plateform let see how &lt;hr /&gt; "&lt;hr /&gt;" tag work actually&lt;/p&gt;</p>
+              <p style="color: rgb(190, 190, 190);">&lt;/body&gt;</p>
+            </div>
+              <p style="margin: 1rem 0rem; font-size: 2.2rem;">Let see output of this entire code through live server on the brwser;</p>
+              <img src="Screenshot (164).png" alt="output" style="margin:2rem 0rem; width:119rem; border-radius: 1rem; box-shadow: 0rem 0rem 1rem 0rem gray;">
+
+               </div>
+              </div>
+                
+              </div>
+
+              </div>
+             </div>
+           </div>
+  
+          </div>
+        </div>
+      </div>
+  
+        <div class="previous-next-b">
+          <a href="/next5"><button class="btn" onclick="previous()">&larr;Previous</button></a>
+          <a href="/next51"><button class="btn" onclick="next()">Next&rarr;</button></a>
+        </div>
+  
+      </section>
+
+    </body>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+
+      
+      // Searchicon creation
+      
+      const search = document.querySelector(".searchi");
+      const searchi = document.querySelector(".scinput");
+      
+      search.sonclick = function () {
+        searchi.classList.toggle("sinput");
+      };
+      
+      // darkmode icon creation
+  
+      var darki = document.getElementById("darki");
+  
+      darki.ionclick = function () {
+        document.body.classList.toggle("dark-theme");
+      };
+  
+      //create previous or next button 
+  
+      var visibleDiv = 0;
+      function showDive(){
+        $("-a-rc").hide();
+        $("-a-rc:eq("+ visibleDiv +")").show();
+      }
+      showDive()
+      function next(){
+        if(visibleDiv== $("-a-rc").length-1){
+          visibleDiv = 0;
+        }
+        else{
+          visibleDiv ++;
+        }
+        showDive();
+      }
+      function previous(){
+        if(visibleDiv== 0){
+          visibleDiv= $("-a-rc").length-1;
+        }
+        else{
+          visibleDiv --;
+        }
+        showDive();
+      }
+  
+    </script>
+  </html>

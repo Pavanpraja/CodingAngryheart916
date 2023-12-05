@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodingAngryheart</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link href="/next1">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .i-loading {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 12rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.4s;
+      position: absolute;
+      right: 44%;
+      top: 12rem;
+    }
+
+    .h-loading {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .i-loading::after {
+      content: "";
+      width: 3rem;
+      height: 3rem;
+      border: 0.8rem solid rgb(199 199 199);
+      border-top-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      animation: ani 1s linear infinite;
+    }
+
+
+    @keyframes ani {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="loading">
+      <div class="i-loading">
+      </div>
+    </div>
+  </div>
+
+  <div id="navbar">
+    <nav class="navbar-container">
+      <div class="hamburger" onclick="hamclick()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="left-n-c">
+        <h1>CodingAngryheart</h1>
+      </div>
+      <div class="nav-links-c">
+        <ul class="nav-a-links">
+          <li class="s-link">
+            <a href="/index"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/home.png"
+                alt="home" /></a>
+          </li>
+          <!-- <li class="s-link">
+            <select name="links" id="about" size="1" onchange="window.location.href=this.value;">
+              <option value="">About</option>
+              <option value="http://localhost:5000/index/">HTML Tutorial</option>
+              <option value="http://localhost:5000/indexcss/">CSS Tutorial</option>
+              <option value="">JavaScript Tutorial</option>
+            </select>
+          </li> -->
+          <li class="s-link"><a href="/index">HTML</li></a>
+          <li class="s-link"><a href="/indexcss">CSS</li></a>
+          <li class="s-link"><a href="/indexjs">JavaScript</li></a>
+
+          <li class="s-link"><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="right-n-c">
+        <input class="scinput" type="text" placeholder="search here..." />
+        <img class="searchi" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+          alt="search--v1" onclick="sonclick()" />
+        <img id="darki" width="64" height="64"
+          src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/external-night-halloween-bearicons-glyph-bearicons.png"
+          alt="external-night-halloween-bearicons-glyph-bearicons" onclick="ionclick()" />
+          <a href="/signcookie" class="plink" style="text-decoration: none;" onmousedown="onMousedown()"
+          onmouseup="onMouseup()">
+          <h1 style="font-size: 2rem; color: black;">Profile</h1>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <hr />
+  <section id="Home">
+    <!-- <img src="https://images.unsplash.com/photo-1503252947848-7338d3f92f31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80" alt="home img"> -->
+
+    <img src="home1.gif" alt="gif">
+    <div class="home-container">
+      <h2>
+        <span class="htyped"></span>
+      </h2>
+      <h2>Explore With CodingAngryheart</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+        fugiat officiis possimus quae sunt debitis eaque, vel magni esse
+        ipsum, doloremque eos eveniet dolor minima reprehenderit voluptatem
+        odio delectus laboriosam sed. Mollitia, assumenda rem!
+      </p>
+      <div class="h-btn-container">
+        <button class="h-1-btn">More thoughts</button>
+        <button class="h-2-btn">Explore more</button>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <section id="HTML">
+    <div class="HTML-container">
+      <h1>
+        Welcome to the HTML Tutorial
+        <img width="50" height="50" src="https://img.icons8.com/ios/50/html-5--v2.png" alt="html-5--v2" />
+      </h1>
+      <p>Let's start this Tutorial with Gracefully</p>
+      <div class="HTML-a-c">
+        <div class="html-a-lc">
+          <div class="first-html-c">
+            <h2>HTML Overview</h2>
+            <br /><a href="/index">1. Introduction of HTML</a>
+            <br /><a href="/next1">2. HTML Document Structure</a>
+            <br /><a href="/next2">3. Page Structure of HTML</a>
+            <br /><a href="/next3">4. Work in the Browser</a>
+            <br /><a href="/next4">5. Using Editors</a>
+            <br /><a href="/next5">6.Introduction of HTML Tags, Elements and Attributes</a>
+            <br /><a href="/next5">6.1 Explanation about HTML Tags</a>
+            <br /> <a href="/next50">&rArr; Basic Tags of HTML</a>
+            <br /><a href="/next51">&rArr; Phrase Tags</a>
+            <br /><a href="/next52">&rArr; HTML Formatting Tags</a>
+            <br /><a href="/next6">6.2 Explanation about HTML Elements</a>
+            <br /><a href="/next7">6.3 Explanation about HTML Attributes</a>
+          </div>
+          <div class="second-html-c"></div>
+          <div class="thired-html-c"></div>
+          <div class="forth-html-c"></div>
+        </div>
+
+        <div id="ide">
+          <div class="ide-p">
+            <p>Try with copy the code &#8611;</p>
+          </div>
+          <div class="ide">
+            <div class="ide-c">
+              <a href="https://onecompiler.com/html"><img width="100" height="100" src="https://img.icons8.com/carbon-copy/100/source-code.png"
+                alt="source-code" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="intro" class="html-a-rc">
+
+          <div class="all-explore">
+            <h3>Introduction of HTML</h3>
+
+            <h4>&rarr; Let we introduce you actually what is the HTML?</h4>
+            <div class="explore">
+              <p>&#x2022; HTML stands for Hyper Text Markup Language.</p>
+              <p>
+                &#x2022; It is most widely used language to create or write
+                Web_Pages.
+              </p>
+              <p>
+                &#x2022; Hypertext refers to the way in which
+                Web_pages/HTML_documents are linked together.
+              </p>
+              <p>
+                &#x2022; HTML is a Markup Language which means you use HTML to
+                simply "mark-up" a text document with tags that tell a Web
+                browser how to structure it to display.
+              </p>
+              <p>
+                &#x2022; It is used to define a page layout, meaning it is a
+                barebone page structure.
+              </p>
+              <p>
+                &#x2022; If we want to get any file in the form of html form,
+                then we have to write the extension '' at the end of that
+                file along with its name.
+              </p>
+              <p>
+                &#x2022; It consists of a set of tags. This set of tags is
+                written in HTML Document.
+              </p>
+              <p>
+                &#x2022; There are so many versions are available of HTML but
+                HTML5 is the latest version.
+              </p>
+            </div>
+
+            <h4>&rarr; characteristics of HTML</h4>
+            <div class="explore">
+              <p>&#x2022; It is directly indicated with , Css, JavaScript, backend and other languages.</p>
+              <p>
+                &#x2022; It is investigated language.
+              </p>
+              <p>
+                &#x2022; It create Semantic Structure.
+              </p>
+              <p>
+                &#x2022; It is used with local Storage & Indexed DB - Client-side data storage.
+              </p>
+              <p>
+                &#x2022; This type of language can be add Text, audio, videos, images and show with server.
+              </p>
+              <p>
+                &#x2022; We can create Semantic structure with tags and elements.
+              </p>
+              <p>
+                &#x2022; Markup word indicates a set of tags assigned to elements of a text to indicate their relation
+                to the rest of the text or dictate how they should be displayed.
+              </p>
+              <p>
+                &#x2022; Relates with the Offline Capabilities (PWA) with Cache API & Service Workers.
+              </p>
+            </div>
+
+            <h4>&rarr; Let's we understand the body Structure of HTML</h4>
+            <div class="explore">
+              <img src="structure2.jpg" alt="bodystructure"
+                style="margin:2rem 0rem; width:119rem; border-radius: 1rem; box-shadow: 0rem 0rem 1rem 0rem gray;">
+              <p>Here in the explanation for the above analogy, the man skeleton refers to HTML with the page body. When
+                that skeleton is painted it the body/clothes gets CSS and after all that man is thoughted about new
+                technologies from mind (which refers to JavaScript), the man gets life and can run and built a new
+                buisness or facilities. Similarly, when we develop our websites we need HTML for the structure and if we
+                want our website to look good and prettier we need CSS and if we want to add functionalities to our
+                webpage we need JavaScript.</p>
+            </div>
+            <h4>&rarr; History of HTML</h4>
+            <div class="explore">
+              <p>&#x2022; The first version of HTML was written by Tim Berners-Lee in 1993. </p>
+              <p>&#x2022; There have been many different versions of HTML.</p>
+              <p>&#x2022; The most widely used version throughout the 2000's was HTML 4.01</p>
+              <p>&#x2022; HTML 4.01 became an official standard in December 1999.</p>
+              <p>&#x2022; Another version, XHTML, was a rewrite of HTML as an XML language.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div id="struc" class="html-a-rc">
+            <h3>HTML Document Structure</h3>
+           <div class="all-explore">
+             <h4>&rarr; welcome here</h4>
+           </div>
+         </div> -->
+
+
+      </div>
+
+
+    </div>
+    </div>
+
+    <div class="previous-next-b">
+      <button class="btn" onclick="previous()" disabled>&larr;Previous</button>
+      <a href="/next1"><button class="btn" onclick="next()">Next&rarr;</button></a>
+    </div>
+
+  </section>
+
+  <section id="footer">
+    <div class="foo-container">
+      <h1><img src="st (2).jpg" alt="logo"><big> @</big>CodingAngryheart</h1>
+      <p>Welcome to our best learning plateform and Follow us through these social media's to keep learning and explore
+        mind thoughts. If you have any question in your mind,<br> ask through social media's or contact page. </p>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100067532370640&mibextid=ZbWKwL"><img width="24" height="24"
+            src="https://img.icons8.com/material/24/facebook-new.png" alt="facebook-new" /></a>
+        <a href="https://instagram.com/pavanprajapati9206?igshid=NGExMmI2YTkyZg=="><img width="24" height="24"
+            src="https://img.icons8.com/material/24/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+        <a href="https://github.com/Pavanpraja"><img width="24" height="24"
+            src="https://img.icons8.com/material/24/github.png" alt="github" /></a>
+        <a
+          href="https://www.linkedin.com/in/pavan-prajapati-8a348626b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B2NPwgjDTRW28Ni%2BJv5OEgw%3D%3D"><img
+            width="24" height="24" src="https://img.icons8.com/material/24/linkedin--v1.png" alt="linkedin--v1" /></a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    Copyright &copy; 2023 CodingAngryheart.com
+  </footer>
+
+  <script>
+    // Searchicon creation
+
+    const search = document.querySelector(".searchi");
+    const searchi = document.querySelector(".scinput");
+
+    search.sonclick = function () {
+      searchi.classList.toggle("sinput");
+    };
+
+    // darkmode icon creation
+
+    var darki = document.getElementById("darki");
+
+    darki.ionclick = function () {
+      document.body.classList.toggle("dark-theme");
+    };
+
+
+    // hamburger creation 
+
+    var hamb = document.querySelector(".hamburger");
+    var ullists = document.querySelector(".nav-a-links");
+
+    hamb.hamclick = function () {
+      ullists.classList.toggle("ul1");
+    }
+    // profile customization
+
+    var prol = document.querySelector(".plink");
+
+    onMousedown = () => {
+      prol.style.opacity = "0.5"
+    }
+    onMouseup = () => {
+      prol.style.opacity = "1"
+    }
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+  <script>
+    // create a loader
+
+    window.addEventListener("load", () => {
+      var a = document.querySelector(".i-loading");
+      a.classList.add("h-loading");
+    })
+
+    // typescript
+
+    var typed = new Typed(".htyped", {
+      strings: [
+        "Hello...",
+        " Welcome to Our Website ",
+        "In this website",
+        "we will explore about Many languages like...",
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+      typeSpeed: 60,
+      backSpeed: 10,
+      loop: true,
+    });
+
+
+  </script>
+
+</body>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+  integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingAngryheart</title>
+    <link rel="stylesheet" href="/indexjs.css" />
+    <link href="/nextjs1">
+</head>
+
+<body>
+    <div id="navbar">
+        <nav class="navbar-container">
+            <div class="hamburger" onclick="hamclick()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="left-n-c">
+                <h1>CodingAngryheart</h1>
+            </div>
+            <div class="nav-links-c">
+                <ul class="nav-a-links">
+                    <li class="s-link">
+                        <a href="/indexjs"><img width="50" height="50"
+                                src="https://img.icons8.com/ios-filled/50/home.png" alt="home" /></a>
+                    </li>
+                    <li class="s-link"><a href="/index">HTML</li></a>
+                    <li class="s-link"><a href="/indexcss">CSS</li></a>
+                    <li class="s-link"><a href="/indexjs">JavaScript</li></a>
+                    <li class="s-link"><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right-n-c">
+                <input class="scinput" type="text" placeholder="search here..." />
+                <img class="searchi" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+                    alt="search--v1" onclick="sonclick()" />
+                <img id="darki" width="64" height="64"
+                    src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/external-night-halloween-bearicons-glyph-bearicons.png"
+                    alt="external-night-halloween-bearicons-glyph-bearicons" onclick="ionclick()" />
+                <a href="/signout"><button id="sn-btn">Signout</button></a>
+            </div>
+        </nav>
+    </div>
+    <hr />
+
+    <section id="HTML">
+        <div class="HTML-container">
+            <h1>
+                Welcome to the JavaScript Tutorial
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/css3.png" alt="css3" />
+            </h1>
+            <p>Let's start this Tutorial with Gracefully</p>
+            <div class="HTML-a-c">
+                <div class="html-a-lc">
+                    <div class="first-html-c">
+                        <h2>CSS Overview</h2>
+                        <br /><a href="/indexjs">1. Introduction</a>
+                        <br /><a href="/stepjs1">2. Working of JavaScript</a>
+                        <br /><a href="/stepjs2">3. Rendering of JavaScript</a>
+                        <br /><a href="/stepjs3">4. Show output methods</a>
+                        <br /><a href="/stepjs4">5. Operators</a>
+                        <br /><a href="/stepjs41">i. Arithmetic Operators</a>
+                        <br /><a href="/stepjs42">ii. Assignment Operators</a>
+                        <br /><a href="/stepjs43">iii. String Operators</a>
+                        <br /><a href="/stepjs44">iv. Logical Operators</a>
+                        <br /><a href="/stepjs45">v. Comparison Operators</a>
+                        <br /><a href="/stepjs46">vii. Bitwise Operators</a>
+                        <br /><a href="/stepjs47">viii. Type Operators</a>
+                        <br /><a href="/stepjs5">6. Variables</a>
+
+                    </div>
+                    <div class="second-html-c"></div>
+                    <div class="thired-html-c"></div>
+                    <div class="forth-html-c"></div>
+                </div>
+
+                <div id="ide">
+                    <div class="ide-p">
+                        <p>Try with copy the code &#8611;</p>
+                    </div>
+                    <div class="ide">
+                        <div class="ide-c">
+                            <a href="https://onecompiler.com/html"><img width="100" height="100" src="https://img.icons8.com/carbon-copy/100/source-code.png"
+                                alt="source-code" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="intro" class="html-a-rc">
+
+
+                    <div class="all-explore">
+                        <h3>Arihmetic Operator</h3>
+                        <div class="explore">
+                            <p style="margin-top: 1rem; margin-left: 1rem;">&#8611; An arithmetic operation is specified
+                                by combining operands with one arithmetic operator.</p>
+                            <p style="margin-top: 1rem; margin-left: 1rem;"><b>In this table</b>, we see that some of
+                                the arithmatic operators and there working are given;</p>
+                            <br>
+                            <table border="1" style="border-radius: 1rem; border-width: 1rem;">
+                                <tr>
+                                    <td>
+                                        <h4 style="padding: 0rem 3rem;">Operators</h4>
+                                    </td>
+                                    <td>
+                                        <h4 style="padding: 0rem 5rem;">Working</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">+</p>
+                                    </td>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">Addition: Adds one operand to the other</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">-</p>
+                                    </td>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">Subtraction: Subtracts the second operand from
+                                            the first</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">*</p>
+                                    </td>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">Multiplication: Multiplies one operand by the
+                                            other</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">/</p>
+                                    </td>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">Division: Divides the first operand by the second
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">%</p>
+                                    </td>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">Modulus: Divides the first integer operand by the
+                                            second, and returns the remainder</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">++</p>
+                                    </td>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">Increment: Increases the operand's value by one
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">--</p>
+                                    </td>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">Decrement: Decreases the operand's value by one
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">**</p>
+                                    </td>
+                                    <td>
+                                        <p style="padding: 0rem 5rem;">Exponentiation: Lets you refer to a number in
+                                            terms of a base value and an exponent</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p style="margin-top: 1rem; margin-left: 1rem;"><big><b>L</b></big>et us try to explore one
+                                by one;</p>
+
+                            <h4>&rarr; Addition Operator</h4>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Here, Addition Operator (+) adds numbers let
+                                see with a example;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using Addition operator&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1 id="print"&gt;&lt;/h1&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">let a = 12;<br>
+                                    let b = 10;<br>
+                                    let c = a + b;</p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    document.getElementById("print").innerHTML = c;</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+
+                            <h4>&rarr; Subtraction Operator</h4>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Here, Subtraction Operator (-) Subtracts
+                                numbers let see with a example;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using Subtraction operator&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1 id="print"&gt;&lt;/h1&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">let a = 30;<br>
+                                    let b = 10;<br>
+                                    let c = a - b;</p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    document.getElementById("print").innerHTML = c;</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+
+                            <h4>&rarr; Multiplication Operator</h4>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Here, Multiplication Operator (*) Multiplies
+                                numbers let see with a example;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using Multiplication operator&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1 id="print"&gt;&lt;/h1&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">let a = 2;<br>
+                                    let b = 5;<br>
+                                    let c = a * b;</p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    document.getElementById("print").innerHTML = c;</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+
+                            <h4>&rarr; Division Operator</h4>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Here, Division Operator (/) Devides numbers
+                                let see with a example;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using Division operator&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1 id="print"&gt;&lt;/h1&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">let a = 50;<br>
+                                    let b = 5;<br>
+                                    let c = a / b;</p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    document.getElementById("print").innerHTML = c;</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+
+                            <h4>&rarr; Modulus Operator</h4>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Here, Modulus Operator (%) returns the
+                                division remainder. Let see with a example;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using Modulus operator&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1 id="print"&gt;&lt;/h1&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">let a = 11;<br>
+                                    let b = 10;<br>
+                                    let c = a % b;</p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    document.getElementById("print").innerHTML = c;</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+
+                            <h4>&rarr; Increment Operator</h4>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Here, Increment Operator (++) Increments
+                                numbers let see with a example;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using Increment operator&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1 id="print"&gt;&lt;/h1&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">let a = 12;<br>
+                                    a++;</p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    document.getElementById("print").innerHTML = a;</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+
+                            <h4>&rarr; Decrement Operator</h4>
+                            <p style="margin-top: 1rem; margin-left: 1rem;">Here, Decrement Operator (--) Decrements
+                                numbers let see with a example;</p>
+                            <div id="ps-box" class="ps-box" style="margin: 2rem 0rem;">
+                                <p style="color: rgb(155, 155, 155);">
+                                    &lt;!DOCTYPE html&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;html lang="en"&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;title&gt;Using Decrement operator&lt;/title&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/head&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;h1 id="print"&gt;&lt;/h1&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;script&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">let a = 12;<br>
+                                    a--;</p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 8rem;">
+                                    document.getElementById("print").innerHTML = a;</span>
+                                </p>
+                                <p style="color: rgb(190, 190, 190); margin-left: 4rem;">
+                                    &lt;/script&gt;
+                                </p>
+
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/body&gt;
+                                </p>
+                                <p style="color: rgb(190, 190, 190);">
+                                    &lt;/html&gt;
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="previous-next-b">
+                <a href="/stepjs4"><button class="btn">&larr;Previous</button></a>
+                <a href="/stepjs42"><button class="btn">Next&rarr;</button></a>
+            </div>
+    </section>
+
+    <section id="footer">
+        <div class="foo-container">
+            <h1><img src="st (2).jpg" alt="logo"><big> @</big>CodingAngryheart</h1>
+            <p>Welcome to our best learning plateform and Follow us through these social media's to keep learning and
+                explore
+                mind thoughts. If you have any question in your mind,<br> ask through social media's or contact page.
+            </p>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100067532370640&mibextid=ZbWKwL"><img width="24"
+                        height="24" src="https://img.icons8.com/material/24/facebook-new.png" alt="facebook-new" /></a>
+                <a href="https://instagram.com/pavanprajapati9206?igshid=NGExMmI2YTkyZg=="><img width="24" height="24"
+                        src="https://img.icons8.com/material/24/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                <a href="https://github.com/Pavanpraja"><img width="24" height="24"
+                        src="https://img.icons8.com/material/24/github.png" alt="github" /></a>
+                <a
+                    href="https://www.linkedin.com/in/pavan-prajapati-8a348626b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B2NPwgjDTRW28Ni%2BJv5OEgw%3D%3D"><img
+                        width="24" height="24" src="https://img.icons8.com/material/24/linkedin--v1.png"
+                        alt="linkedin--v1" /></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Copyright &copy; 2023 CodingAngryheart.com
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+<script>
+    // Searchicon creation
+
+    const search = document.querySelector(".searchi");
+    const searchi = document.querySelector(".scinput");
+
+    search.sonclick = function () {
+        searchi.classList.toggle("sinput");
+    };
+
+    // darkmode icon creation
+
+    var darki = document.getElementById("darki");
+
+    darki.ionclick = function () {
+        document.body.classList.toggle("dark-theme");
+    };
+
+
+    // hamburger creation 
+
+    var hamb = document.querySelector(".hamburger");
+    var ullists = document.querySelector(".nav-a-links");
+
+    hamb.hamclick = function () {
+        ullists.classList.toggle("ul1");
+    }
+    // profile customization
+
+    var prol = document.querySelector(".plink");
+
+    onMousedown = () => {
+        prol.style.opacity = "0.5"
+    }
+    onMouseup = () => {
+        prol.style.opacity = "1"
+    }
+</script>
+<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+<script>
+    // create a loader
+
+    window.addEventListener("load", () => {
+        var a = document.querySelector(".i-loading");
+        a.classList.add("h-loading");
+    })
+
+    // typescript
+
+    var typed = new Typed(".htyped", {
+        strings: [
+            "Hello...",
+            " Welcome to Our Coding Plateform ",
+            "In this Plateform",
+            "we will explore about Many languages like...",
+            "HTML",
+            "CSS",
+            "JavaScript",
+        ],
+        typeSpeed: 60,
+        backSpeed: 10,
+        loop: true,
+    });
+
+
+</script>
+
+</html>

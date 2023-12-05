@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingAngryheart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+        }
+
+        input {
+            margin-top: 3rem;
+            padding: 0.5rem 2rem;
+            border-radius: 0.4rem;
+            font-size: 1.8rem;
+            outline: 0;
+            border: 0;
+            letter-spacing: 0.1rem;
+            margin-left: 1rem;
+            box-shadow: 0rem 0rem 0.2rem 0rem;
+        }
+
+        textarea {
+            padding: 0.5rem 2rem;
+            border-radius: 0.4rem;
+            font-size: 1.8rem;
+            outline: 0;
+            border: 0;
+            letter-spacing: 0.1rem;
+            margin-left: 1rem;
+            box-shadow: 0rem 0rem 0.2rem 0rem;
+            height: 12rem;
+            margin-top: 3rem;
+        }
+
+        button {
+            padding: 1rem 2.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            border: 0;
+            outline: 0;
+            box-shadow: 0rem 0rem 0.2rem 0rem;
+            border-radius: 1rem;
+            background-color: white;
+            margin-top: 2rem;
+        }
+
+        button:hover {
+            box-shadow: inset 0rem 0rem 1rem 0rem gray;
+        }
+
+        form {
+            width: 57rem;
+            height: 48rem;
+        }
+
+        .u-d-con {
+            height: 79rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="userdetails">
+            <div class="u-d-con">
+                <form action="/userdetail" method="POST">
+                    <table>
+                        <h1>Your Details</h1>
+                        <tr>
+                            <td>
+                                <h2>Your Name: </h2>
+                            </td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Birth: </h2>
+                            </td>
+                            <td><input type="date" name="DOB"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>About You: </h2>
+                            </td>
+                            <td><textarea name="about" id="about" cols="30" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><button class="udbtn">Submit</button></td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
