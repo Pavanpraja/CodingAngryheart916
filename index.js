@@ -12,24 +12,24 @@ mongoose
   .then(() => console.log("I have successfull to connect database"))
   .catch((e) => console.log(e));
 
-const contactSchema = new mongoose.Schema({
+const contactSchemaji = new mongoose.Schema({
   name: String,
   email: String,
 });
-const signuporegis = new mongoose.Schema({
+const signuporegisji = new mongoose.Schema({
   name: String,
   email: String,
   password: String,
 });
-const userdetails = new mongoose.Schema({
+const userdetailsji = new mongoose.Schema({
   name: String,
   DOB: String,
   about: String,
 });
 
-const Contactdata = mongoose.model("Resister", contactSchema);
-const SignRegisdata = mongoose.model("Signup", signuporegis);
-const userdetdata = mongoose.model("userdetails", userdetails);
+const Contactdata = mongoose.model("Resister", contactSchemaji);
+const SignRegisdataji = mongoose.model("Signup", signuporegisji);
+const userdetdata = mongoose.model("userdetailsji", userdetailsji);
 
 const app = express();
 
@@ -282,7 +282,7 @@ const isAuthenticated = async (req, res, next) => {
 
     const decoded = jwt.verify(token, "alkdfjakjhfkdf");
 
-    req.user = await SignRegisdata.findById(decoded._id)
+    req.user = await SignRegisdataji.findById(decoded._id)
 
     next();
   } else {
@@ -304,7 +304,7 @@ app.post("/signup", async (req, res)=>{
 
   const {email, password} = req.body;
 
-  let user = await SignRegisdata.findOne({email});
+  let user = await SignRegisdataji.findOne({email});
 
   if(!user){
     return res.redirect("/register")
@@ -329,7 +329,7 @@ app.post("/signup", async (req, res)=>{
 app.post("/register", async (req, res) => {
   const { name, email, password } = req.body;
 
-  let user = await SignRegisdata.findOne({email});
+  let user = await SignRegisdataji.findOne({email});
 
   if(user){
     return res.redirect("/signup");
@@ -337,7 +337,7 @@ app.post("/register", async (req, res) => {
 
   const hashedPassword = await bcrypt.hash(password, 10);
   
-  user = await SignRegisdata.create({name, email, password: hashedPassword,})
+  user = await SignRegisdataji.create({name, email, password: hashedPassword,})
 
   const token = jwt.sign({_id:user._id}, "alkdfjakjhfkdf");
 
