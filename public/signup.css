@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Lobster&family=Pacifico&family=Poppins:wght@500&family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::selection{
+    color: white;
+    background-color: black;
+  }
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* signup form creation */
+
+#signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 160rem; */
+    height: 78.8rem;
+    background: whitesmoke;
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    box-shadow: inset 0rem 0rem 1rem 0rem white, 0rem 0rem 1rem 0rem darkgray;
+    border-radius: 1rem;
+    width: 30%;
+    height: 69%;
+}
+.signup-container h1 {
+    font-size: 2.5rem;
+    border-bottom: 0.3rem solid #9d9d9d;
+    margin-bottom: 1rem;
+    color: dimgray;
+}
+.signup-container p{
+    font-size: 2rem;
+}
+.sform form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 4rem;
+}
+.sform form label {
+    font-size: 1.7rem;
+}
+.sform form .f-i{
+    width: 32rem;
+    height: 3.2rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0rem 0rem 0.2rem 0rem darkgray;
+    outline: none;
+    padding: 1rem 2rem;
+}
+
+.sform form .agree {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.sform form .agree span a{
+    color: red;
+    text-decoration: none;
+}
+.sform form .s-btn{
+    height: 3rem;
+    width: 32rem;
+    border: none;
+    outline: 0;
+    box-shadow: 0rem 0rem 0.3rem 0rem darkgray;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+.sform form .s-btn:hover{
+    height: 2.9rem;
+    width: 31.9rem;
+    border: none;
+    outline: 0;
+    box-shadow: inset 0rem 0rem 0.3rem 0rem darkgray;
+    border-radius: 1rem;
+}
+.agree h2{
+    font-size: 1.5rem;
+}
+
+@media (max-width:415px){
+    html{
+        font-size: 6px;
+    }
+    .signup-container{
+        width: 90%;
+    }
+    .agree h2{
+        font-size: 1.7rem;
+    }
+    #signup{
+    height: 111.8rem;
+    }
+}
